@@ -1,0 +1,50 @@
+
+{% extends "plantillabase.html" %}
+{% load static %}
+{% block body %}
+      <!--Imagenes de infante-->
+      <div class="imagen1">
+        <div class="card" style="width: 20%;display: inline-block;margin-left: 7%;">
+            <img src="{% static 'Infantil/ConjuntoGarden.webp' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Conjunto Jardinero</h5>
+                <p class="card-text">$14.990</p>
+                <form action="carrito.html">
+                    <button type="submit" id="boton" class="btn btn-primary">Agregar</button>
+                </form>
+            </div>
+        </div>
+        <div class="card" style="width: 20%;display:inline-block;margin-left: 1%;">
+            <img src="{% static 'Infantil/Niño.webp' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Conjunto Bacano</h5>
+                <p class="card-text">$19.990</p>
+                <form action="carrito.html">
+                    <button type="submit" id="boton" class="btn btn-primary">Agregar</button>
+                </form>
+            </div>
+        </div>
+      
+      <div class="card" style="width: 20%;display:inline-block;margin-left: 1%;">
+        <img src="{% static 'Infantil\poleronjiji.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Poleron Fries</h5>
+            <p class="card-text">$16.990</p>
+            <form action="carrito.html">
+                <button type="submit" id="boton" class="btn btn-primary">Agregar</button>
+            </form>
+        </div>
+      </div>
+      <div class="card" style="width: 20%;display:inline-block;margin-left: 1%;">
+        <img src="{% static 'Infantil\15671284_1.webp' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Poleron Raw</h5>
+            <p class="card-text">$19.990</p>
+            <form action="carrito.html">
+                <button type="submit" id="boton" class="btn btn-primary">Agregar</button>
+            </form>
+        </div>
+    </div>
+  </div>
+
+{% endblock  %}    

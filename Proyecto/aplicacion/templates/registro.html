@@ -1,0 +1,43 @@
+{% extends "plantillabase.html" %}
+{% load static %}
+{% block body %}
+
+<div class="container">
+
+ 
+
+  <form class="row g-3" method="POST">
+    {% csrf_token %}
+      <label for="">Rut</label>
+      <input type="text" placeholder="01.234.567-8 " required name="rut" id="rut">
+      <br>
+      <label for="">Nombres:</label>
+      <input type="text" placeholder="Juan" required  name="nombre" >
+      <br>
+      <label for="">Apellidos:</label>
+      <input type="text" placeholder="xxx zzz" required name="apellidos">
+      <br>
+      <label for="">Email:</label>
+      <input type="email" placeholder="juan@gmail.com"  required name="correo" id="correo">
+      <br>
+      <label for="">Direccion:</label>
+      <input type="text" placeholder="xxxx #54" required name="direccion" >
+      <br>
+      
+      <label for="exampleInputPassword1" required class="form-label">Contraseña</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" name="password1">
+      <label for="exampleInputPassword1" class="form-label">Repetir contraseña</label>
+      <input type="password" class="form-control" required id="exampleInputPassword1" name="password2">
+
+      <button type="submit" class="btn btn-primary" id ="btnvalida"> Enviar </button>
+  </form>
+
+          {% if mensaje %}
+            <p> {{ mensaje }} </p>
+          {% endif %}
+</div>
+
+
+  <script src="{% static 'validacionRegistro.js'%}"></script>
+
+{% endblock  %}

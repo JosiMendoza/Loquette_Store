@@ -1,0 +1,47 @@
+{% extends "plantillabase.html" %}
+{% load static %}
+{% block body %}
+    <!--Imagenes de Hombre-->
+    <div class="imagen1">
+        <div class="card" style="width: 20%;display: inline-block;margin-left: 7%;">
+            <img src="{% static 'Hombre/580a0e916a2db478e08ea549da42426f.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Cazadora </h5>
+                <p class="card-text">$35.000</p>
+                <form action="carrito.html">
+                    <button type="submit" id="boton" class="btn btn-primary">Agregar</button>
+                </form>
+            </div>
+        </div>
+        <div class="card" style="width: 20%;display:inline-block;margin-left: 1%;">
+            <img src="{% static 'Hombre/674734557389b5b34b15ea4fb07b1c73.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Pantalon </h5>
+                <p class="card-text">$22.000</p>
+                <form action="carrito.html">
+                    <button type="submit" id="boton" class="btn btn-primary">Agregar</button>
+                </form>
+            </div>
+        </div>
+        <div class="card" style="width: 20%;display:inline-block;margin-left: 1%;">
+            <img src="{% static 'Hombre/images.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Pantalon </h5>
+                <p class="card-text">$9.990</p>
+                <form action="carrito.html">
+                    <button type="submit" id="boton" class="btn btn-primary">Agregar</button>
+                </form>
+            </div>
+        </div>
+        <div class="card" style="width: 20%;display:inline-block;margin-left: 1%;">
+            <img src="{% static 'Hombre/poleron-fotor-2024052022330.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Pantalon </h5>
+                <p class="card-text">$14.990</p>
+                <form action="carrito.html">
+                    <button type="submit" id="boton" class="btn btn-primary">Agregar</button>
+                </form>
+            </div>
+        </div>
+      </div>
+{% endblock  %}    

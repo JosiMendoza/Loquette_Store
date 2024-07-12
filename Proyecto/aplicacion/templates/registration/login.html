@@ -1,0 +1,23 @@
+{% extends "plantillabase.html" %}
+{% load static %}
+{% block body %}
+
+<div class="container-md" id="container_login">
+    <h1 id="titulo_login">INICIO SESION</h1>
+
+    <form method="post" >
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <div class="d-grid gap-2 d-md-block" id="boton_login">
+            <button type="submit"  id="">Iniciar Sesion</button>
+        </div>
+        
+    </form>
+
+</div>
+    
+
+
+    
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends "plantillabase.html" %}
+{% load static %}
+{% block body %}
+    <h1>Usuarios disponibles:   </h1>
+    <br>
+
+    <div id="idMensajes">
+        {% if mensaje%}
+            {{mensaje}}
+        {% endif %}
+    </div>
+
+
+    <table>
+        {% if usuarios %}
+            <th>Rut</th>
+
+            <th>Nombre</th>
+
+            <th>Eliminar</th>
+            <th>Modificar</th>
+            {% for x in usuarios%}
+                <tr>
+                    <td>{{x.rut}}
+             
+                    <td>&nbsp;&nbsp;{{x.nombres}}&nbsp;&nbsp;
+                 
+                    <td><a href="{% url 'mod_usuarios' pk=x.rut%}">Modificar</a>
+               
+                    <td><a href="{% url 'del_usuarios' pk=x.rut%}">Eliminar</a>
+                    
+                </tr>
+            {% endfor %}
+
+        {% else %}
+                <h5>NO HAY USUARIOS DISPONIBLES</h5>
+        {% endif %}
+    </table>
+{% endblock %}

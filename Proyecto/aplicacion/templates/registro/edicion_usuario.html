@@ -1,0 +1,23 @@
+{% extends "plantillabase.html" %}
+{% load static %}
+{% block body %}
+    <h1>Editar usuario</h1>
+    <br>
+
+    <div>
+        {% if usuario %}
+            <h2>Edicion:</h2>
+
+            <form action="{% url 'insertar_usuario' %}" method="POST">
+                {% csrf_token %}
+
+                <pre>Rut:   <input type="text" name="rut" id="" value="{{usuario.rut}}"></pre>
+                <pre>Nombre:   <input type="text" name="nombre" id="" value="{{usuario.nombres}}"></pre>
+            
+                <input type="submit" name="opcion" value="Actualizar">
+            </form>
+
+        {%endif%}
+    </div>
+
+{% endblock %}

@@ -1,0 +1,64 @@
+/*plantilla base*/
+#carritoBtn{
+    position:relative;
+    right: 20px;
+}
+.dropdown-menu{
+    position: relative;
+    right: 10px;
+}
+#login_registro_des{
+    position: relative;
+    left: 27%;
+}
+#modal_boton_ingreso{
+    position: relative;
+    right: 40%;
+}
+/* cosas del index*/
+#Carrusel{
+    width: 92%;
+    left: 70px;
+    top: 40px;
+}
+
+.carousel-title{
+    background-color: rgb(255 255 255);
+    width: 50%;
+    position:relative;
+    bottom: 20px;
+    left:25%;
+}
+
+#titulo_h2{
+    position:relative;
+    top: 10px;
+}
+
+#desc_p{
+    position:relative;
+    top: 10px;
+}
+
+#map{
+    height: 200px;
+  }
+
+/* LOGIN */
+#container_login{
+    position:relative;
+    top:100px;
+    left:400px
+    
+}
+
+#boton_login{
+    position:relative;
+    top:50px;
+    left:120px
+}
+#titulo_login{
+    position:relative;
+    bottom: 39px;
+    left: 50px;
+}

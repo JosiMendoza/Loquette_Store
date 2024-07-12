@@ -1,0 +1,49 @@
+{% extends "plantillabase.html" %}
+{% load static %}
+{% block body %}
+      
+
+      <!--Imagenes de Oversize-->
+      <div class="imagen1">
+        <div class="card" style="width: 20%;display: inline-block;margin-left: 7%;">
+            <img src="{% static 'Oversize/D_NQ_NP_993085-MPE49074184339_022022-W.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Canguro</h5>
+              <p class="card-text">$12.000</p>
+                <form action="">
+                    <button type="submit" id="boton" class="btn btn-primary">Agregar</button>
+                </form>
+            </div>
+        </div>
+        <div class="card" style="width: 20%;display:inline-block;margin-left: 1%;">
+            <img src="{% static 'Oversize/Camiseta-de-algodon-Oversized-Fit---Marron---H-M-CO.webp' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Camisa</h5>
+              <p class="card-text">$8.000</p>
+                <form action="">
+                    <button type="submit" id="boton" class="btn btn-primary">Agregar</button>
+                </form>
+            </div>
+        </div>
+        <div class="card" style="width: 20%;display:inline-block;margin-left: 1%;">
+          <img src="{% static 'Oversize/SAB0064023001S084_det_2_03130140.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Polera </h5>
+            <p class="card-text">$8.000</p>
+              <form action="">
+                  <button type="submit" id="boton" class="btn btn-primary">Agregar</button>
+              </form>
+          </div>
+      </div>
+      <div class="card" style="width: 20%;display:inline-block;margin-left: 1%;">
+        <img src="{% static 'Oversize\imagenpres-fotor-2024052020110.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Polera </h5>
+          <p class="card-text">$8.000</p>
+            <form action="">
+                <button type="submit" id="boton" class="btn btn-primary">Agregar</button>
+            </form>
+        </div>
+    </div>
+    </div>
+{% endblock  %}
